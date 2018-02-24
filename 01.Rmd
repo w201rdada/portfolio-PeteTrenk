@@ -1,9 +1,9 @@
 # Title: Predicting New Advertiser Spend
-#search advertising, budgeting, revenue forecasts, time series, web logs, data science {-}
-#### Keywords {-}
+## Predict how much an advertiser is capable of spending before they begin spending {-}
+#### search advertising, budgeting, revenue forecasts, time series, web logs, data scienceKeywords {-}
 
 
-Predict how much an advertiser is capable of spending before they begin spending
+
 
 ## A beginning: How much of this advertiser's budget are we getting and how much of it could we be getting 
 
