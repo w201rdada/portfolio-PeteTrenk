@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="advertiser-spending.html">
 
-<link rel="next" href="advertiser-spending.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -101,46 +101,24 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">W201 Portfolio</h1>
-<h4 class="author"><em>Oski Bear</em></h4>
-<h4 class="date"><em>MIDS Fall 2017</em></h4>
+<div id="using-machine-vision-to-predict-wave-quality-surfs-up" class="section level1">
+<h1><span class="header-section-number">2</span> Using Machine Vision to Predict Wave Quality {#Surf’s Up}</h1>
+<div id="keywords-1" class="section level4 unnumbered">
+<h4>Keywords</h4>
+<p>surf forecast, video analysis, computer vision, machine learning, wave quality, OpenCV, parallax</p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome!</h1>
-<!-- You can include images saved within your repo... -->
-<div class="figure" style="text-align: center"><span id="fig:hello-world"></span>
-<img src="img/hello-world.png" alt="Hello World!" width="50%" />
-<p class="caption">
-Figure .: Hello World!
-</p>
+<div id="dawn-patrol-blues" class="section level2">
+<h2><span class="header-section-number">2.1</span> Dawn Patrol Blues</h2>
+<p>For those who work 9-5, catching surf usually means waking up at dawn. To sleep or not to sleep becomes the routine question. To help answer that surfers can consult several websites that offer daily forecasts and wave condition rankings. Some even offer live video streams. Yet surfers are all too familiar with the scenario of a good forecast going bad or of judgements based on live video proving poor. Known as the dawn patrol blues - these scenarious leave the early risers at the beach with no surfable waves in sight. But advancements in computer vision and machine learning offer new hope to avoid these situations. Through the analysis of real-time surf cameras, we can improve the current forecast methodology and perhaps develop an eye for good surf that out performs our own.</p>
 </div>
-<p>Pariatur sapiente anim waistcoat bicycle rights. Cupidatat chambray portland direct trade, XOXO odio gochujang banjo deep v sustainable. Sint jianbing DIY humblebrag heirloom exercitation ennui fanny pack. Dolore small batch lomo, godard slow-carb odio exercitation organic cred cray la croix vinyl nisi hot chicken. Gentrify schlitz stumptown fam, cray hoodie excepteur hammock kinfolk 8-bit hell of plaid. Helvetica hashtag pinterest typewriter, tbh vape vero farm-to-table. Laboris bitters aliqua small batch.</p>
-<!-- Below this line is just examples of how you can embed video from Google Drive. First you have to enable sharing, then just get the object ID which is that long string between d/ and /preview and will also be appended to any sharing link you generate for your video. -->
-<p>
-<div class="figure" style="text-align: center"><span id="fig:hello-benji"></span>
-<iframe src="https://drive.google.com/file/d/0B6bobRDQR96iVEV3SXJJal9CczQ/preview" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure .: Hello Benjamin Franklin!
-</p>
+<div id="computer-vision-goes-surfing" class="section level2">
+<h2><span class="header-section-number">2.2</span> Computer Vision Goes Surfing</h2>
+<p>How waves are created and how they are different depend on wind, fetch, swell period, and the ocean floor (bathymetry) <span class="citation">[@misc]</span>. Each of these variables, themselves, can fluctuate quite a bit, making accurate predictions of wave quality for most surf spots challenging. Current datasets used to gather these variables include information from: the National Data Buoy Center, NOAA (nationa oceanic and atmosphere administration) for tide information and offshore storms, General Bathymetric Chart of the Oceans, and localized weather conditions from Weather Underground. All of these variables are currently modeled into a forecast of 5 categories of wave conditions across major surf forecast sites: poor, fair, poor to fair, fair to good, good. What is actually used to define these categories is based on two factors: 1. Scientific knowledge of how swell interacts with bathymetry and local weather conditions 2. User feedback. User feedback is highly subjective and the current science behind wave prediction leaves low confidence intervals. Wave speed, wave height, and predicted time-on-wave are metrics that are directly observable via real-time cameras, and all offer a more confident, objective assessment of surf quality. Setting up a pipeline between Surfline’s camera feeds and a computer vision framework provides the analytics platform needed to run prediction models on the above mentioned metrics. Those metrics can then be fed back into surfline’s website. OpenCV<span class="citation">[@misc]</span> could offer the framework needed for video analysis and machine learning will provide the prediction models for the said 3 metrics.</p>
+<p>Obtaining these metrics pose challenges including identifying starting and stopping points within the video to calculate wave speed, reference points to calculate wave height, and surfing surfers to calculate time-on-wave. To overcome these, a known point of reference needs to be established for each surf spot. This might require manual labor. However, some surf spots already offer known references such as life guard towers which have standard heights. Once an absolute reference point is known, parallax can be used to measure distances which, in turn, will be used to quantify rates</p>
 </div>
-<div id="abstract-of-my-first-cool-idea" class="section level3 unnumbered">
-<h3>Abstract of my first cool idea</h3>
-<p>Pop-up occupy labore, pug tofu nisi franzen YOLO tilde tumblr deep v nulla aliqua. Sapiente stumptown et lo-fi art party. Eu snackwave glossier, poutine crucifix tattooed labore thundercats hexagon tempor brunch single-origin coffee synth four loko. Velit beard ex etsy migas, tempor hashtag. Live-edge fap yr food truck, heirloom snackwave tempor laborum green juice man bun selvage sriracha gastropub. Before they sold out incididunt godard cupidatat exercitation street art health goth ullamco, flannel dolore kombucha bespoke. Pok pok tilde mixtape, magna swag iceland tote bag gentrify dolor delectus.</p>
-</div>
-<div id="abstract-of-my-second-cool-idea" class="section level3 unnumbered">
-<h3>Abstract of my second cool idea</h3>
-<p>Vero dolor franzen letterpress. Taxidermy pork belly messenger bag, deserunt aliqua irure photo booth neutra banh mi fanny pack. Butcher fam heirloom marfa. Tilde reprehenderit snackwave tempor. Qui pop-up kitsch dolor. Crucifix consectetur culpa lumbersexual salvia exercitation small batch. Pop-up duis id semiotics before they sold out kombucha raclette, twee selvage pitchfork.</p>
-</div>
-<div id="abstract-of-my-third-cool-idea" class="section level3 unnumbered">
-<h3>Abstract of my third cool idea</h3>
-<p>Activated charcoal succulents ex, pop-up minim neutra pork belly nulla helvetica semiotics dolor magna jianbing. Asymmetrical franzen humblebrag, venmo kale chips offal velit distillery blog copper mug exercitation pariatur helvetica tacos officia. Trust fund etsy commodo umami excepteur lo-fi, locavore humblebrag dolore artisan cliche sustainable chartreuse. Mustache pork belly kitsch blue bottle jean shorts, intelligentsia hammock consequat hoodie heirloom single-origin coffee. Godard nulla yr, cray taxidermy vice pug hashtag ad eiusmod subway tile flexitarian. Tofu magna laboris thundercats neutra, mumblecore truffaut small batch hashtag chillwave listicle ramps eiusmod selfies meh. Bushwick butcher cupidatat hella organic.</p>
-</div>
-<div id="about-the-author" class="section level2 unnumbered">
-<h2>About the author</h2>
-<p>Sustainable aute gochujang, messenger bag vero dolor blog pork belly knausgaard. Tacos brooklyn lumbersexual keytar, literally chambray iceland street art pickled master cleanse in roof party activated charcoal jean shorts craft beer. Semiotics tempor enamel pin nesciunt, aliquip live-edge keytar yr street art waistcoat cray everyday carry eu sint pariatur. Aliquip anim godard leggings, flexitarian direct trade humblebrag. Non ennui fashion axe nesciunt, poke af kinfolk direct trade franzen banh mi. Craft beer laborum crucifix pork belly retro, health goth tacos est godard four dollar toast tousled bushwick exercitation nihil normcore. Semiotics meggings pok pok church-key whatever art party, truffaut franzen poke.</p>
-<p><em>Updated: 2018-02-25</em></p>
+<div id="training-on-real-waves." class="section level2">
+<h2><span class="header-section-number">2.3</span> Training on Real Waves.</h2>
+<p>Adding in wave speed, wave height, and predicted time-on-wave from the model could eventually be used to train the independent variables modeled into surf forecasting and help fine-tune those models. The result should be forecasts with higher confidence intervals and a less biased status of wave conditions. However, most important, surfers are provided real-time information that is more useful in making a decision on whether or not to surf at a particular spot. These insights could also be leveraged by organizations like the World Surf League who are responsible for determining ideal surf conditions for competitions. The additional insight around local conditions will, at the very least, help surfers avoid those dawn patrol blues.</p>
 
 </div>
 </div>
@@ -149,8 +127,8 @@ Figure .: Hello Benjamin Franklin!
           </div>
         </div>
       </div>
+<a href="advertiser-spending.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="advertiser-spending.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -179,7 +157,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/index.Rmd",
+"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/02.Rmd",
 "text": "Edit"
 },
 "download": null,
