@@ -1,4 +1,4 @@
-# Using Machine Vision to Predict Wave Quality {#Surf's Up}
+# Using Machine Vision to Predict Wave Quality {#Surfs-Up}
 
 #### Keywords {-}
 
